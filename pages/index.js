@@ -1,24 +1,23 @@
 // import { Button } from 'react-bootstrap'; // TODO: COMMENT IN FOR AUTH
-// import { signOut } from '../utils/auth'; // TODO: COMMENT IN FOR AUTH
-// import { useAuth } from '../utils/context/authContext'; // TODO: COMMENT IN FOR AUTH
 
-function Home() {
-  // const { user } = useAuth(); // TODO: COMMENT IN FOR AUTH
-
-  const user = { displayName: 'Dr. T' }; // TODO: COMMENT OUT FOR AUTH
+export default function Board() {
   return (
-    <div
-      className="text-center d-flex flex-column justify-content-center align-content-center"
-      style={{
-        height: '90vh',
-        padding: '30px',
-        maxWidth: '400px',
-        margin: '0 auto',
-      }}
-    >
-      <h1>Hello {user.displayName}! </h1>
-    </div>
+    <>
+      <div className="board-row">
+        <button type="button" className="square">1</button>
+        <button type="button" className="square">2</button>
+        <button type="button" className="square">3</button>
+      </div>
+      <div className="board-row">
+        <button type="button" className="square">4</button>
+        <button type="button" className="square">5</button>
+        <button type="button" className="square">6</button>
+      </div>
+      <div className="board-row">
+        <button type="button" className="square">7</button>
+        <button type="button" className="square">8</button>
+        <button type="button" className="square">9</button>
+      </div>
+    </>
   );
 }
-
-export default Home;
